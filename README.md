@@ -1,6 +1,6 @@
-## Blum autoclicker 
+## Blum Autoclicker 
 
-**NOTE:** I created this project for education purposes in the ML field.
+**Works with the recent (04.07) recolorization update.**
 
 ### Installation
 
@@ -15,3 +15,7 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 python main.py
 ```
 4. Follow instructions given in the cmd
+
+### Disclaimer
+
+**NOTE:** I created this project for education purposes in the ML field.
