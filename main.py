@@ -44,26 +44,26 @@ def click(detected, l, t, size, width):
                 center_x, center_y = salon_centrifuga(x1, y1, x2, y2)
                 object_clickable_shape = (center_x, center_y - 10)
 
-        if object_clickable_shape:
-            x = object_clickable_shape[0] + l
-            y = object_clickable_shape[1] + t
+            if object_clickable_shape:
+                x = object_clickable_shape[0] + l
+                y = object_clickable_shape[1] + t
 
-            if y > threshold_y:
-                mouse.move(x, y, absolute=True)
-                mouse.click(button=mouse.LEFT)
-                time.sleep(0.002)
-                object_clickable_shape = None
+                if y > threshold_y:
+                    mouse.move(x, y, absolute=True)
+                    mouse.click(button=mouse.LEFT)
+                    time.sleep(0.01)
+                    object_clickable_shape = None
 
-            # Fault-respective implementation !! to just click on a HOLE you dumb ass
-            if clicks % 4 == 0:
-                # random click
-                x = l + np.random.randint(width)
-                x = max(x, threshold_x)
-                y = t + np.random.randint(size)
-                y = min(max(y, threshold_y), max_theshold_y)
-                mouse.move(x, y, absolute=True)
-                mouse.click(button=mouse.LEFT)
-            clicks += 1
+                # Fault-respective implementation !! to just click on a HOLE you dumb ass
+                if clicks % 4 == 0:
+                    # random click
+                    x = l + np.random.randint(width)
+                    x = max(x, threshold_x)
+                    y = t + np.random.randint(size)
+                    y = min(max(y, threshold_y), max_theshold_y)
+                    mouse.move(x, y, absolute=True)
+                    mouse.click(button=mouse.LEFT)
+                clicks += 1
 
 
 def on_escape(event):

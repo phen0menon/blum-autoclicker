@@ -1,0 +1,7 @@
+# ?
+ultralytics==8.2.48
+opencv-python
+mouse
+pywin32
+numpy==1.26.4
+keyboard==0.13.5
