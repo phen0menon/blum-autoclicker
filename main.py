@@ -40,6 +40,8 @@ def click(detected, l, t, size, width):
             if title == 3 and random.random() > 0.25:
                 continue
 
+            object_clickable_shape = None
+
             if title:
                 center_x, center_y = salon_centrifuga(x1, y1, x2, y2)
                 object_clickable_shape = (center_x, center_y - 10)
