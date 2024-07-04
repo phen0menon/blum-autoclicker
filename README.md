@@ -2,6 +2,8 @@
 
 **Works with the recent (04.07) recolorization update.**
 
+![2024-07-04 19-27-47 (online-video-cutter com) (4)](https://github.com/phen0menon/blum-autoclicker/assets/15520523/dcf4943c-4086-4322-8d42-b1f1e3fd6009)
+
 ### Installation
 
 1. Clone the repository
