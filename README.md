@@ -5,7 +5,11 @@
 ### Installation
 
 1. Clone the repository
-2. Install requirements
+2. Install requirements:
+```
+pip install -r requirements.txt
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+```
 3. Run in the cmd:
 ```
 python main.py
