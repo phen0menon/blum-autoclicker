@@ -1,6 +1,6 @@
 ## Blum autoclicker 
 
-**NOTE:** I created this project for education purposes in the ML field.
+**NOTE:** I created this project for education purposes in the ML field. Works with the recent (04.07) recolorization update.
 
 ### Installation
 
