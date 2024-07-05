@@ -21,3 +21,7 @@ python main.py
 ### Disclaimer
 
 **NOTE:** I created this project for education purposes in the ML field.
+
+### License
+
+© Rolan Ibragimov (phen0menon) 2024. Licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License.
