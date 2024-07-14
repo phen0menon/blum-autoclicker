@@ -75,8 +75,8 @@ class Runner:
                 title = box.cls.item()
                 # print(f"[title] - {box.cls.item()} [conf] - {box.conf.item()}")
 
-                # respect some faults to not be banned occasionally
-                if title == 3 and random.random() > 0.25:
+                # ignore bombs
+                if title == 3:
                     continue
 
                 object_clickable_shape = None
@@ -95,25 +95,6 @@ class Runner:
                         time.sleep(0.01)
                         object_clickable_shape = None
 
-                    # Some random fault-respective clicks
-                    if self.clicks % 4 == 0:
-                        # random click
-                        x = min(
-                            max(
-                                window["left"] + np.random.randint(window["width"]),
-                                min_threshold_x,
-                            ),
-                            max_threshold_x,
-                        )
-                        y = min(
-                            max(
-                                window["top"] + np.random.randint(window["height"]),
-                                min_threshold_y,
-                            ),
-                            max_threshold_y,
-                        )
-                        mouse.move(x, y, absolute=True)
-                        mouse.click(button=mouse.LEFT)
                     self.clicks += 1
 
     def grab_screenshot(self, window: Window):
@@ -128,6 +109,30 @@ class Runner:
             )
             screenshot = cv2.cvtColor(np.array(img), cv2.COLOR_RGB2BGR)
             return screenshot
+
+    def find_replay_button(self, screenshot: np.ndarray, window: Window):
+        APPROX_BOTTOM_REPLAY_POS = 200
+
+        white_color = np.array([255, 255, 255])
+        mask = cv2.inRange(
+            screenshot[-APPROX_BOTTOM_REPLAY_POS:, :], white_color, white_color
+        )
+        contours, _ = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+        for contour in contours:
+            x, y, w, h = cv2.boundingRect(contour)
+            if w > window["width"] // 2:
+                mouse.move(
+                    window["left"] + window["width"] // 2,
+                    window["top"]
+                    + window["height"]
+                    - APPROX_BOTTOM_REPLAY_POS
+                    + y
+                    + h // 2,
+                    absolute=True,
+                )
+                mouse.click(button=mouse.LEFT)
+                return True
+        return False
 
     def run(self):
         logging.info("Loading pretrained model...")
@@ -147,7 +152,13 @@ class Runner:
                 continue
 
             try:
-                detected: List[Any] = self.model(self.grab_screenshot(window))
+                screenshot = self.grab_screenshot(window)
+                
+                # autoreplay feature
+                if self.find_replay_button(screenshot, window):
+                    continue
+
+                detected: List[Any] = self.model(screenshot)
                 self.detect_figure_and_click(detected, window)
                 time.sleep(0.006)
             except Exception as e:
