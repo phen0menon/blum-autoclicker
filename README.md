@@ -1,14 +1,22 @@
 ## Blum Autoclicker (автокликер для BLUM)
 
-**Работает с последним (4 июля 2024) обновлением игры**.
+**Features**:
 
-![2024-07-04 19-27-47 (online-video-cutter com) (4)](https://github.com/phen0menon/blum-autoclicker/assets/15520523/dcf4943c-4086-4322-8d42-b1f1e3fd6009)
+- Extra fast clicker (uses GPU, YOLOv8 pretrained model)
+- 100% precision and ignores bombs
+- Autoreplay feature (run and go)
+
+
+Demo:
+
+https://github.com/user-attachments/assets/73f00997-9f5f-41e7-8ecf-e2432f6cf3a2
+
 
 <details>
   <summary>🇺🇸 English instructions</summary>
   <br />
 
-  **Works with the recent (04.07) recolorization update.**
+  **Works with the recent (14.07.2024) update.**
 
   ### Installation
   
