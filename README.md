@@ -21,7 +21,7 @@ https://github.com/user-attachments/assets/73f00997-9f5f-41e7-8ecf-e2432f6cf3a2
   ### Installation
 
   0. You will need Nvidia GPU to run this app since it uses CUDA cores to achieve fast speed.
-  1. Clone the repository
+  1. Download the repository (https://github.com/phen0menon/blum-autoclicker/releases)
   2. Install Python >= 3.8 (https://www.python.org/downloads/)
   3. Install requirements:
   ```
@@ -54,7 +54,7 @@ https://github.com/user-attachments/assets/73f00997-9f5f-41e7-8ecf-e2432f6cf3a2
   ### Установка:
 
 0. Понадобится видеокарта от Nvidia (используем CUDA ядра, чтобы эффективно распознавать изображение)
-1. Клонируйте репозиторий (скачать)
+1. Скачайте репозиторий (https://github.com/phen0menon/blum-autoclicker/releases)
 2. Нужен Python >= 3.8 (https://www.python.org/downloads/)
 3. Установка зависимостей:
 ```
