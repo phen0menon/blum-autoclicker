@@ -23,18 +23,21 @@ https://github.com/user-attachments/assets/73f00997-9f5f-41e7-8ecf-e2432f6cf3a2
   0. You will need Nvidia GPU to run this app since it uses CUDA cores to achieve fast speed.
   1. Download the repository (https://github.com/phen0menon/blum-autoclicker/releases)
   2. Install Python >= 3.8 (https://www.python.org/downloads/)
-  3. Install requirements:
-  ```
-  # base requirements
-  pip install -r requirements.txt
-  # pytorch with CUDA enabled
-  pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
-  ```
-  3. Run in the cmd:
+  3. Install requirements (run in the cmd). Copy and paste the line, not the whole text!:
+```
+# Base requirements:
+      
+pip install -r requirements.txt
+
+# PyTorch with CUDA enabled (required!):
+      
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+```
+  4. Run the process:
   ```
   python main.py
   ```
-  4. Follow instructions given in the cmd
+  5. Follow instructions given in the cmd
 
   ### Possible problems
 
@@ -56,12 +59,14 @@ https://github.com/user-attachments/assets/73f00997-9f5f-41e7-8ecf-e2432f6cf3a2
 0. Понадобится видеокарта от Nvidia (используем CUDA ядра, чтобы эффективно распознавать изображение)
 1. Скачайте репозиторий (https://github.com/phen0menon/blum-autoclicker/releases)
 2. Нужен Python >= 3.8 (https://www.python.org/downloads/)
-3. Установка зависимостей:
+3. Установка зависимостей (запустите в командной строке). Нужно скопировать именно строчки команд, не весь текст!:
 ```
 # Общие зависимости проекта
+
 pip install -r requirements.txt
 
 # Пакеты, чтобы компьютерное зрение работало на GPU, а не на CPU
+
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 ```
 4. Запустить скрипт:
