@@ -42,6 +42,12 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 
   ### Possible problems
 
+  #### Autoreplay not working
+
+  Try settings Dark mode in the Telegram.
+
+  #### Other problems
+
   All problems may occur because of PyTorch installed without CUDA support. To fix that, run the following commands:
   ```
   # uninstall existing packages first
@@ -78,6 +84,12 @@ python main.py
 5. Следовать инструкции :)
 
 ### Возможные проблемы
+
+<details>
+  <summary>Не работает автореплей</summary>
+
+  Попробуйте установить темную тему в Telegram.
+</details>
 
 <details>
   <summary>Кликер медленно работает!</summary>
