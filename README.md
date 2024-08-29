@@ -1,5 +1,7 @@
 <h1 align="center">Blum Autoclicker (YOLOv8)</h1>
 
+AutoClicker for BLUM (Telegram App). 
+
 **Features**:
 
 - Extra fast clicker (uses GPU, YOLOv8 pretrained model)
@@ -121,7 +123,12 @@ python main.py
 
 ### Disclaimer
 
-**NOTE:** I created this project for education purposes in the ML field.
+I created this project for education purposes in the ML field.
+
+If you would like to make a donation, your support would be greatly appreciated:
+- **BTC:** `1F97kP3UjQXT1oAd14eiBe6gsBuwoXAqZN` 
+- **USDT (TRC20):** `TEG9LE43HFfLAkGC8sas1swXYQkowsLntn` 
+- **TON:** `UQDJuHGnRvs9FPtX6kyUuELpkh2ZbUyS9uB-VIjZqUu9Ih_C`
 
 ### License
 
