@@ -150,6 +150,10 @@ class Runner:
                 title = box.cls.item()
                 # print(f"{box.cls.item()}; {box.conf.item()}")
 
+                # ignore bombs
+                if title == 3:
+                    continue
+
                 object_clickable_shape = None
 
                 if title:
