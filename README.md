@@ -121,7 +121,14 @@ python main.py
 </details>
 </details>
 
-### Disclaimer
+### ‼️ Disclaimer
+
+#### Is it bannable?
+
+- Unlike other bots, my script interacts directly with the user interface rather than with the Blum API, performing simple left-clicks on ‘stars.’
+- My script is untraceable, meaning Blum developers cannot reliably distinguish my script from an ordinary human user
+
+#### Credits
 
 I created this project for education purposes in the ML field.
 
