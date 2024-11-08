@@ -1,4 +1,4 @@
-<h1 align="center">🎃 Blum Autoclicker (YOLOv8)</h1>
+<h1 align="center">🍀 Blum Autoclicker (YOLOv8)</h1>
 
 AutoClicker for BLUM (Telegram App). 
 
